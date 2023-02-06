@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:bloc_demo/bloc/internet_bloc/internet_state.dart';
 import 'package:bloc_demo/bloc/internet_bloc/internet_event.dart';
-import 'package:connectivity/connectivity.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class InternetBloc extends Bloc<InternetEvent,InternetState>{
@@ -30,7 +30,6 @@ class InternetBloc extends Bloc<InternetEvent,InternetState>{
     // TODO: implement close
     connectivitySubscription?.cancel();
     return super.close();
-
   }
 
 }

@@ -23,9 +23,9 @@ class HomeScreen extends StatelessWidget {
 
           // this runs in backgorund ...if we don't need to build ui
           if (state is InternetGainedState) {
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Internet connected!'),backgroundColor: Colors.green,),);
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Internet connected!'),backgroundColor: Colors.green,),);
           } else if (state is InternetLostState) {
-            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Internet not connected!'),backgroundColor: Colors.red,),);
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Internet not connected!'),backgroundColor: Colors.red,),);
 
           }
           //TODO: Implement
