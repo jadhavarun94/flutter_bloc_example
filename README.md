@@ -1,2 +1,2 @@
 # flutter_bloc_example
-This is a best example to understand bloc pattern
+This is a best example to understand bloc state management approach
